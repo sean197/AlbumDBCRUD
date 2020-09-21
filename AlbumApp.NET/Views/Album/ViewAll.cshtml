@@ -22,10 +22,7 @@
             <th>
                 @Html.DisplayNameFor(model => model.RecordLabel)
             </th>
-            <!-- Delete Image Path -->
-            <th>
-                @Html.DisplayNameFor(model => model.ImagePath)
-            </th>
+
             <th></th>
         </tr>
     </thead>
@@ -46,10 +43,7 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.RecordLabel)
                 </td>
-                <!-- Delete Image Path -->
-                <td>
-                    @Html.DisplayFor(modelItem => item.ImagePath)
-                </td>
+     
                 <td>
                     <a class="btn btn-primary btn-sm" onclick="Edit('@Url.Action("AddorEdit", "Album", new { id = item.AlbumID })')"> <i class="fas fa-edit"></i> </a>
                     <a class="btn btn-danger btn-sm" onclick="Delete('@Url.Action("Delete", "Album", new { id = item.AlbumID })')"> <i class="fas fa-trash-alt"></i> </a>
